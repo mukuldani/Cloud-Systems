@@ -1,0 +1,102 @@
+/*
+ * Developer: Alireza Eskandarpour Shoferi
+ * Designer: Wouter de Bres (dribbble.com/wdeb)
+ *
+ * Distributed under the terms of the MIT license
+ * https://opensource.org/licenses/MIT
+ */
+
+.package {
+  box-sizing: border-box;
+  width: 90%;
+  height: 45vh;
+  border: 3px solid #e8e8e8;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 24px;
+  text-align: center;
+  float: left;
+  -webkit-transition: margin-top 0.5s linear;
+  transition: margin-top 0.5s linear;
+  position: relative;
+margin-top: 30px;  
+}
+.package:hover {
+  margin-top: -10px;
+  -webkit-transition: margin-top 0.3s linear;
+  transition: margin-top 0.3s linear;
+  border-color: #31b0d5;
+}
+.name {
+  color: #565656;
+  font-weight: 300;
+  font-size: 3rem;
+  margin-top: -5px;
+}
+.price {
+  margin-top: 7px;
+  font-weight: bold;
+}
+.hrr {
+  background-color: #dedede!important;
+  border: none!important;
+  height: 1px!important;
+  margin-top: 10px!important;
+}
+.trial {
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 2px 21px 2px 21px;
+  color: #33c4b6;
+  border: 1px solid #e4e4e4;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+  bottom: -20px;
+}
+.ull {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 29px;
+}
+.lii {
+  margin-bottom: 15px;
+}
+.checkIcon {
+  font-family: "FontAwesome";
+  content: "\f00c";
+}
+.lii::before {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  font-size: 1.3rem;
+  color: #33c4b6;
+  margin-right: 3px;
+}
+.brilliant {
+  border-color: #33c4b6;
+}
+/* Triangle */
+.brilliant::before {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 64px 64px 0 0;
+  border-color: #3bc6b8 transparent transparent transparent;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+}
+.brilliant::after {
+  font-family: "FontAwesome";
+  content: "\f00c";
+  color: white;
+  position: absolute;
+  left: 9px;
+  top: 6px;
+  text-shadow: 0 0 2px #37c5b6;
+  font-size: 1.4rem;
+}

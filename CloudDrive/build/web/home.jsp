@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,6 +27,8 @@
     <script src="js/popper/popper.min.js"></script>
     <script src="js/jquery.min.js"></script>
       <link rel="stylesheet" href="css/style.css">
+      
+      
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,7 +38,11 @@
     <![endif]-->
 
   <%session.setAttribute("Active","Dashboard"); %>
-</head>
+  <% String message = "Welcome"; %>
+<script type="text/javascript">
+          var mesg = "<%=message %>";
+          alert(mesg);
+          </script>
 
 <body>
 

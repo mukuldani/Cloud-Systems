@@ -40,8 +40,7 @@ public class Login extends HttpServlet {
         //String DB_URL = "jdbc:mysql://localhost:3306/cloudsystems";
         
    //  Database credentials
-   String USER = "root";
-   String PASS = "";
+   
    
    Connection con = null;
    Statement stmt = null;
@@ -77,7 +76,10 @@ public class Login extends HttpServlet {
       {
           stmt.close();
           con.close();
-
+          
+           out.println("<script type=\"text/javascript\">");
+           out.println("alert('username or password incorect');");
+           out.println("</script>");
            response.sendRedirect("index.jsp#download");
       }
       

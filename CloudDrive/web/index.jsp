@@ -33,9 +33,31 @@
         <script src="js/jquery.min.js"></script> 
 					<script type="text/javascript" src="js/jquery.placeholder.label.js"></script> 
 					<script type="text/javascript">
+                                            
+                                                        function hideSignUp(){
+                                                            var siginup = document.getElementById('signupDiv');
+                                                            siginup.style.display = "none";
+                                                        }
+                                                       
+                                                        
 							$(document).ready(function (){
 								$('input[placeholder]').placeholderLabel();
 							})
+                                                        
+                                                        function siginup(){
+                                                            var signupDiv = document.getElementById('signupDiv');
+                                                            var login = document.getElementById('loginDiv');
+                                                            login.style.display = "none";
+                                                            signupDiv.style.display = "block";
+                                                        }
+                                                        
+                                                        function login(){
+                                                            var signupDiv = document.getElementById('signupDiv');
+                                                            var login = document.getElementById('loginDiv');
+                                                            login.style.display = "block";
+                                                            signupDiv.style.display = "none";
+                                                        }
+                                                        
 						</script>
                 <%
                 
@@ -48,7 +70,7 @@
                                                 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" onload="hideSignUp()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
@@ -118,7 +140,7 @@
     <section id="download" class="content-section text-center">
         <div class="download-section">
             <div class="container">
-                <div class="col-lg-5">
+                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-6" id="loginDiv">
 				
 					<div class="col-lg-12 nopadding" >
 									<div class="panel panel-default" style='opacity: 0.7;background-color:#fff;'>
@@ -135,6 +157,9 @@
                                                     <div class='form-group'>
                                                     <input type="submit"  value='Login'>
                                                     </div>
+                                                    <div class='form-group'>
+                                                        <button type="button" onclick="siginup()" class="btn btn-link">New User? Sign up</button>
+                                                    </div>
 						</form>
 										   
 					  </div>
@@ -142,7 +167,7 @@
 					</div>
 				</div>
 				
-				<div class="col-lg-5 col-lg-offset-2">
+                <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3" id="signupDiv">
 				
 					<div class="col-lg-12 nopadding" >
 									<div class="panel panel-default" style='opacity: 0.7;background-color:#fff;'>
@@ -167,7 +192,9 @@
 								<div class='form-group'>
 								<input type="submit"  value='Register'>
 								</div>
-                                                            
+                                                                <div class='form-group'>
+                                                                    <button type="button" onclick="login()" class="btn btn-link">Login</button>
+                                                                </div>
 							</form>
 							   
 						   

@@ -45,10 +45,7 @@ import static org.cloudbus.cloudsim.examples.power.Helper.createBroker;
 import org.cloudbus.cloudsim.provisioners.BwProvisionerSimple;
 import org.cloudbus.cloudsim.provisioners.PeProvisionerSimple;
 import org.cloudbus.cloudsim.provisioners.RamProvisionerSimple;
-/**
- *
- * @author sipl-1
- */
+
 public class FileUploadServlet extends HttpServlet {
 
    private static final long serialVersionUID = 1L;
